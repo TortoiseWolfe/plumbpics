@@ -23,6 +23,11 @@
   .cta { display: block; text-align: center; background: #f2b544; color: #141414; font-weight: 700; padding: 14px 18px; border-radius: 12px; text-decoration: none; margin: 14px 0 10px; font-size: 1.05rem; }
   .cta.secondary { background: transparent; color: #e8edf2; border: 1px solid #3a4756; }
   .note { background: #171d24; border-left: 4px solid #f2b544; padding: 12px 16px; border-radius: 0 12px 12px 0; color: #c9d4de; }
+  figure { margin: 14px 0; }
+  figure img { width: 100%; height: auto; display: block; border: 1px solid #26303c; border-radius: 12px; background: #fff; }
+  figcaption { color: #8fa1b3; font-size: 0.92rem; margin-top: 6px; }
+  .plans { display: grid; grid-template-columns: 1fr; gap: 4px 14px; }
+  @media (min-width: 560px) { .plans { grid-template-columns: 1fr 1fr 1fr; } }
   footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid #26303c; color: #8fa1b3; font-size: 0.92rem; text-align: center; }
   a { color: #7cc0ff; }
 </style>
@@ -47,6 +52,31 @@
     <li><b>A floor plan</b> (PDF and DXF)</li>
     <li><b>As-built documentation</b> for the job file</li>
   </ul>
+
+  <h2>From a real walk</h2>
+  <p>What comes out of a PlumbPics walk. These are the finished models and plans, built from the walk photos and drawn in SketchUp. They are the pipeline's output, not screenshots from the phone app.</p>
+  <figure>
+    <img src="images/essex-hero.jpg" alt="Finished 3-D model of a house, front view from the porch side">
+    <figcaption>The finished model, front view. One walk around the house, and this is what comes back.</figcaption>
+  </figure>
+  <div class="plans">
+    <figure>
+      <img src="images/plan-roofs-on.png" alt="Overhead plan of the house with the roof on">
+      <figcaption>Overhead plan, roof on.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/plan-roofs-off.png" alt="Overhead plan of the house with the roof off, showing rooms and dimensions">
+      <figcaption>Roof off: rooms and dimensions.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/plan-ramp-options.png" alt="Plan showing two step-free ramp routes into the house">
+      <figcaption>Ramp options: two step-free routes worked out from the same model.</figcaption>
+    </figure>
+  </div>
+  <figure>
+    <img src="images/parents-walk-overlay.jpg" alt="A walk photo of a house with the model's outline laid over it in yellow">
+    <figcaption>The walk itself, with the model's outline laid back over the photo to check the fit.</figcaption>
+  </figure>
 
   <h2>Who it is for</h2>
   <p>Remodelers, general contractors, carpenters, anyone whose job starts from a building that is already there. If getting the existing house down right is the slowest part of your jobs, this is built for you.</p>
